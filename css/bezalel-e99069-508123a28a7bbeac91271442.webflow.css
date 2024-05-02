@@ -1,4 +1,22 @@
 /* animation */
+.navbar-logo-left {
+  /* Initial opacity */
+  opacity: 0;
+  /* Animation */
+  animation: fadeInOpacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 1s forwards;
+}
+
+@keyframes fadeInOpacity {
+  from {
+    opacity: 0; /* Initial opacity */
+  }
+  
+  to {
+    opacity: 1; /* Final opacity */
+  }
+}
+
+
 .heading-3 {
   /* Initial position */
   position: relative;
@@ -85,6 +103,9 @@
     max-width: none;
   }
 }
+
+
+
 
 .navbar-logo-left {
   z-index: 9999;
