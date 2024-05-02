@@ -1,3 +1,66 @@
+/* animation */
+.heading-3 {
+  /* Initial position */
+  position: relative;
+  top: 60px;
+  opacity: 0;
+  animation: fadeInUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards, fadeOpacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    top: 65px; /* Initial position */
+  }
+  
+  to {
+    top: 0; /* Final position */
+  }
+}
+
+@keyframes fadeOpacity {
+  from {
+    opacity: 0; /* Initial opacity */
+  }
+  
+  to {
+    opacity: 1; /* Final opacity */
+  }
+}
+
+.paragraph-2 {
+  /* Initial position */
+  position: relative;
+  top: 60px;
+  opacity: 0;
+  animation: fadeInUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s forwards, fadeOpacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    top: 65px; /* Initial position */
+  }
+  
+  to {
+    top: 0; /* Final position */
+  }
+}
+
+@keyframes fadeOpacity {
+  from {
+    opacity: 0; /* Initial opacity */
+  }
+  
+  to {
+    opacity: 1; /* Final opacity */
+  }
+}
+
+
+
+
+
+
+
 :root {
   --white: white;
   --red: #ba0707;
@@ -656,12 +719,14 @@
   width: 80%;
   height: 370px;
   transition: background-color 1s;
+  transition: transform 0.3s ease; /* Add smooth transition effect */
   display: flex;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
 
 .div-block-8:hover {
   box-shadow: 0 0 13px 4px rgba(184, 0, 3, .25);
+  transform: scale(1.05); /* Scale the element on hover */
 }
 
 .paragraph-5 {
